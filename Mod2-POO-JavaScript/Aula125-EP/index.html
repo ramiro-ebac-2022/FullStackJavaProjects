@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 125 - Exercício Prático</title>
+</head>
+<body>
+    <h2>1 - Crie uma API de validação de formulário</h2>
+    <label for="idade">Ano de nasccimento :</label><br> 
+    <input id="id1" type="number" min="1900" max="2023" required><br>
+    <button onclick="minhaIdade()">Obter Idade</button>
+    <p id="demo1"></p>
+    <hr>
+    <h2>2 - Crie uma API para criar botão de navegação usando o histórico.</h2>
+    <p class="p2">
+        <nav>
+            <table border="0" align="center">
+                <tr>
+                    <th><button class="btn21" onclick="anterior()">Página Anterior</button></th>
+                    <th><button class="btn22" onclick="seguinte()">Página Seguinte</button></th>
+                </tr>
+            </table>
+        </nav>    
+    </p>
+    <hr>
+    <h2>3 - Crie um botão que obtenha os dados de geolocalização do usuário ao clicar.</h2>
+    <button class="btn23" onclick="getMyLocation()">Obter localização</button>
+    <p id="demo3"></p>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

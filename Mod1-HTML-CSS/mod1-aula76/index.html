@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aula 76 - Exercício Prático</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Arquitetura de Computação em Nuvem</h2>
+            <div class="navbar">
+                <a href="#left">Arquiteturas</a>
+                <a href="#diagramas">Diagramas</a>
+                <a href="#creditos">Créditos</a>
+            </div>
+        </div>
+        <div class="left">
+            <h2>SaaS</h2>
+            <h3>Software as a Service.</h3>
+            <p>É acesso sob demanda a serviços de aplicativos prontos para uso e baseados em nuvem, geralmente gerenciados por um provedor de serviços (por exemplo, Dropbox, Salesforce).</p>
+            <p><strong>Por que que precisamos disso?</strong>  No início, uma empresa pode usar arquitetura monolítica sem dividir camadas. Quando o negócio cresce, um sistema monolítico pode se tornar ineficiente e é dividido em diferentes camadas usando o Model-View-Controller ou outros tipos de arquiteturas em camadas. </p>
+        </div>
+        <div class="middle">
+            <h2>PaaS</h2>
+            <h3>Platform as a Service.</h3>
+            <p>Fornece uma plataforma baseada em nuvem para desenvolver, executar, gerenciar aplicativos (por exemplo, AWS Elastic Beanstalk, Google App Engine).</p>
+            <p><strong>Por que precisamos de PaaS?</strong> Com o crescimento do negócio, temos necessidades constantes de construir subsistemas. PaaS abstrai algumas técnicas comuns para que um subsistema possa ser rapidamente construído.</p>
+        </div>
+        <div class="right">
+            <h2>IaaS</h2>
+            <h3>Infrastructure as a Service.</h3>
+            <p>Permite que as empresas gerenciem seus servidores, armazenamento de dados na nuvem (por exemplo, AWS, Azure, Google cloud).</p>
+            <p><strong>Por que precisamos de IAAS?</strong> Para escalar horizontalmente o negócio, precisamos de diferentes tipos de servidores. O IaaS mascara as diferenças nos sistemas operacionais por virtualização.</p>
+        </div>
+        <div class="diagramas">
+            <p id="diagramas"></p>
+            <h3>Diagramas</h3>
+            <img src="img/diagrama1.jpg" height="400px">
+            <br>
+            <img src="img/diagrama2.png" height="400px">
+            <br>
+        </div>
+        <div class="creditos">
+            <p id="creditos"></p>
+            <h3> Créditos</h3>
+            <a href="https://www.amazon.com/stores/Alex-Xu/author/B08BNMFT7P?ref=ap_rdr&store_ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true">Alex Xu</a>
+            <br>    
+            <a href="https://cloud.google.com/learn/paas-vs-iaas-vs-saas?hl=pt-br">Google</a>
+            <br>
+            <a href="https://www.redhat.com/pt-br/topics/cloud-computing/iaas-vs-paas-vs-saas">RedHat</a>
+            <br>
+        </div>
+        <div class="footer">
+            <p>Ramiro Zavala - 2023</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 2 - Aula 95</title>
+    <script>
+        var n1, n2, res1, res2;
+        n1 = 10;
+        n2 = 5;
+        //-- 1) operações matematicas
+        res1 = n1 * n2;
+        res2 = n1 / n2;
+        console.log(n1 + " + " + n2 + " = " + res1);
+        console.log(n1 + " / " + n2 + " = " + res2);
+        //-- 2) condição de número par
+        if(n1%2==0){
+            console.log("O numero " + n1 + " é PAR.");
+        } else {
+            console.log("O numero " + n1 + " é ÍMPAR.");
+        }
+        //-- 3) dia da semana com Switch
+        switch (n2) {
+            case 1 : console.log("O dia " + n2 + " corresponde ao DOMINGO");
+            break;
+            case 2 : console.log("O dia " + n2 + " corresponde à SEGUNDA-FEIRA");
+            break;         
+            case 3 : console.log("O dia " + n2 + " corresponde à TERÇA-FEIRA");
+            break; 
+            case 4 : console.log("O dia " + n2 + " corresponde à QUARTA-FEIRA");
+            break; 
+            case 5 : console.log("O dia " + n2 + " corresponde à QUINTA-FEIRA");
+            break; 
+            case 6 : console.log("O dia " + n2 + " corresponde à SEXTA-FEIRA");
+            break; 
+            case 7 : console.log("O dia " + n2 + " corresponde ao SÁBADO");
+            break; 
+            default : console.log("O dia " + n2 + " não corresponde a nenhum dia da semana");
+        } 
+        //-- 4) Loop For
+        console.log("Loop FOR :");
+        for (let i=1; i<=50; i++) {
+            console.log(i);
+        }
+        //--
+        console.log("Loop WHILE :");
+        let i = 1;
+        while (i<=50) {
+            console.log(i);
+            i++;
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

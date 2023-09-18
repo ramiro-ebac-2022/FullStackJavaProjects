@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 96 - Atividade 2</title>
+    <script>
+        var texto1 = "Ramiro Arce";
+        var texto2 = "Amelia Bezerra";
+        console.log("STRINGS");
+        //-- 1) comprimento dos strings
+        console.log(texto1 + " tem " + texto1.length + " caracteres");
+        console.log(texto2 + " tem " + texto2.length + " caracteres");
+        //-- 2) fatiar string
+        texto3 = texto2.slice(7,14);
+        console.log("slice(7,14) de [" + texto2 + "] é [" + texto3 + "]");
+
+        texto4 = texto2.substring(7,14);
+        console.log("substring(7,14) de [" + texto2 + "] é [" + texto4 + "]");
+
+        texto5 = texto2.substr(7,7);
+        console.log("substr(7,7) de [" + texto2 + "] é [" + texto4 + "]");
+        //--
+        console.log("ARRAYS");
+        //-- 1) Criando arrays
+        var arr1 = ['C++','Java','Python','Sql'];
+        var arr2 = [1, 2, 3, 4, 5, 6, 7];
+        var arr3 = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta' ,'Sábado'];
+        console.log("arr1 : " + arr1);
+        console.log("arr2 : " + arr2);
+        console.log("arr3 : " + arr3);
+        //-- 2) contando os itens do array
+        console.log("O arr1 tem " + arr1.length + " elementos");
+        //-- 3) removendo 1 item do array3
+        arr3.pop();
+        console.log("Removendo 1 item do array3 : [" + arr3 + "]");
+        //-- 4) incluindo 1 item do array3
+        arr3.push('SABADO');
+        console.log("Incluindo 1 item do array3 : [" + arr3 + "]");
+        //-- 5) ordenando o array3
+        console.log("Ordenando o array3 : [" + arr3.sort() + "]");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

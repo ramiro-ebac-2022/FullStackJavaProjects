@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    grid-area: header;
+    background-color: #3cbac4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #3cbac4;
+}
+
+.navbar a {
+    color: #ccc;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    font-size: 35px;
+    background-color: blue;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'left left middle middle right right'
+    'diagramas diagramas diagramas diagramas diagramas diagramas'
+    'creditos creditos creditos creditos creditos creditos'
+    'footer footer footer footer footer footer'
+    ;
+}
+
+.left, .middle, .right {
+    padding: 10px;
+    height: 300px;
+}
+
+.diagramas {
+    padding: 10px;
+    height: 900px;
+}
+
+.creditos {
+    padding: 10px;
+    height: 200px;
+}
+
+.left {
+    grid-area: left;
+    background-color: #aaa;
+}
+
+.middle {
+    grid-area: middle;
+    background-color: #bbb;
+}
+
+.right {
+    grid-area: right;
+    background-color: #ccc;
+}
+
+.diagramas {
+    grid-area: diagramas;
+    background-color:lightskyblue ;
+    text-align: center;
+}
+
+.creditos {
+    grid-area: creditos;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #f8c100;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: 
+        'header header header header header header'
+        'left left left left left left'
+        'middle middle middle middle middle middle'
+        'right right right right right right'
+        'diagramas diagramas diagramas diagramas diagramas diagramas'
+        'creditos creditos creditos creditos creditos creditos'
+        'footer footer footer footer footer footer'
+        ;
+    }
+}
