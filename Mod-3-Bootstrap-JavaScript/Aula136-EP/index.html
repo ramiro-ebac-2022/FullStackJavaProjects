@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Aula 136 - Exercício Prático</title>
+</head>
+<body>
+    <section>
+        <h2>Formulário</h2>
+        <p id="Contato">
+            <form id="myForm" action="" onsubmit="return validarForm()" method="post">
+                <label for="nome">Nome (*): </label>
+                <input id="nome" type="text">
+                <br><br>
+                <label for="sobreNome">Sobrenome : </label>
+                <input id="sobreNome" type="text">
+                <br><br>
+                <label for="email">E-mail : </label>
+                <input id="email" type="email">
+                <br><br>
+                <label for="telefone">Telefone : </label>
+                <input id="telefone" type="text">
+                <br><br>
+                <label for="Duvida">Comentários e Dúvidas : </label>
+                <br>
+                <textarea id="duvida" cols="50" rows="10"></textarea>
+                <br><br>
+                <button class="btn1" type="button" onclick="resumo()">Resumo</button>
+                <button class="btn2" type="button" onclick="limpar()">Limpar formulário</button>
+                <input type="submit" value="enviar">
+            </form>
+            <br>
+        </p>
+    </section>
+    <hr>
+    <h2>Resumo : </h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <script src="js/main.js"></script>
+</body>
+</html>

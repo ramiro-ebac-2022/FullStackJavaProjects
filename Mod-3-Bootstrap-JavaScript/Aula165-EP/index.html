@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Personalizado -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Padrões -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Aula 165 - Exercício Prático</title>
+</head>
+<body>
+    <!-- 
+        Crie uma página web contendo as seguintes especificações:
+        * A página deve ter um MENU de navegação usando NAVBAR;
+        * A página deve ter pelo menos três containers;
+        * A página deve ter um rodapé;
+        * A página deve ser responsiva;
+        * A página deve ter pelo menos duas cores em Bootstrap;
+        * A página deve obrigatoriamente fazer uso de:
+            * Imagens
+            * Botões
+            * Listas
+            * Tabelas
+            * Alerts
+            * Carousel 
+            * Collapse 
+    -->
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info p-3 fixed-top" style="--bs-bg-opacity: .5;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ramiro Zavala</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link mx-2 active" aria-current="page" href="#">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Experiência Profissional</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="#">Educação</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Habilidades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Soft Skills</a></li>
+                  <li><a class="dropdown-item" href="#">Hard Skills</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-google-plus-square"></i></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link text-dark h5" href="" target="blank"><i class="fab fa-facebook-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Ramiro Arce Zavala</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white mb-5">Licenciado em Computação<br>Analista de Sistemas e Requisitos</p>
+                    <hr class="divider" />
+                </div>
+                <div id="resumo">
+                  <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#resumo1">Dados Pessoais</button>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#resumo2">Idiomas</button>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#resumo3">Resumo Analista</button>
+                  <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#resumo4">Resumo Desenvolvedor</button>
+                  <div id="resumo1" class="collapse show text-white mb-5" data-bs-parent="#resumo">
+                      <br>
+                      <ul class="list-group list-group-flush col-md-8 d-flex justify-content-center w-75 mx-auto">
+                        <li class="list-group-item">❖ Endereço : Rua General Americano Freire - Recife PE</li>
+                        <li class="list-group-item">❖ Telefone : (81)98926-4958</li>
+                        <li class="list-group-item">❖ E-mail : ramiroaz@gmail.com</li>
+                        <li class="list-group-item">❖ LinkedIn : https://www.linkedin.com/in/ramiro-arce/</li>
+                      </ul>
+                      <br>
+                  </div>
+                  <div id="resumo2" class="collapse text-white mb-5" data-bs-parent="#resumo">
+                      <br>
+                      <ul class="list-group list-group-flush col-md-8 d-flex justify-content-center w-75 mx-auto">
+                        <li class="list-group-item">❖ Espanhol - Nativo</li>
+                        <li class="list-group-item">❖ Inglês - Intermediário</li>
+                        <li class="list-group-item">❖ Português - Avançado</li>
+                      </ul>
+                      <br>
+                  </div>
+                  <div id="resumo3" class="collapse text-white mb-5" data-bs-parent="#resumo">
+                    <br>
+                    <ul class="list-group list-group-flush col-md-8 d-flex justify-content-center w-75 mx-auto">
+                      <li class="list-group-item">❖ Gerenciar requisitos (funcionais e não funcionais)</li>
+                      <li class="list-group-item">❖ Mapear processos de negócio</li>
+                      <li class="list-group-item">❖ Elaborar documento de Especificação Funcional e Técnica</li>
+                      <li class="list-group-item">❖ Garantir a qualidade das entregas incrementais do produto</li>
+                      <li class="list-group-item">❖ Gerenciar as mudanças de escopo</li>
+                    </ul>
+                    <br>
+                  </div>
+                  <div id="resumo4" class="collapse text-white mb-5" data-bs-parent="#resumo">
+                    <br>
+                    <ul class="list-group list-group-flush col-md-8 d-flex justify-content-center w-75 mx-auto">
+                      <li class="list-group-item">❖ Elaborar diagramas de Casos de Uso, de Domínio, de Classes</li>
+                      <li class="list-group-item">❖ Elaborar scripts PL/SQL para a criação os objetos de banco de dados : <br> Tabelas, índices, sequências, triggers, jobs, procedimentos, pacotes, etc.</li>
+                      <li class="list-group-item">❖ Desenvolver telas em Oracle Forms, e relatórios em Oracle Reports</li>
+                      <li class="list-group-item">❖ Desenvolver APIs em Java Spring, seguindo padrão REST</li>
+                      <li class="list-group-item">❖ Gerenciar os versionamentos do sistema com GIT</li>
+                    </ul>
+                    <br>
+                  </div>
+            </div>
+      </div>
+    </header>
+    <!-- Experiência Profissional  -->
+    <section class="page-section bg-primary" id="experiencia">
+      <h3 class="text-white mb-5 text-center">Experiência Profissional</h3>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/logo_nuevo-hitss.png" class="img-fluid rounded-start" alt="globalhitss">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Analista Desenvolvedor Sênior</h5>
+                    <p class="card-text"><small class="text-body-secondary">Global Hitss - 2023</small></p>
+                    <p class="card-text">Alocado no Senado Federal. <br>Manutenção dos sistemas de Recursos Humanos.
+                        <br>Oracle, PL/SQL, SVN.
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/logo-pulsati.png" class="img-fluid rounded-start" alt="pulsati">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Desenvolvedor Sênior</h5>
+                    <p class="card-text"><small class="text-body-secondary">Spintec / Pulsati - 2022</small></p>
+                    <p class="card-text">Alocado na empresa MV.<br>Atendendo os chamados N3 da equipe de Suprimentos.<br>Java, Oracle, PL SQL.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/logo-supero.png" class="img-fluid rounded-start" alt="supero">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Analista Desenvolvedor Sênior</h5>
+                    <p class="card-text"><small class="text-body-secondary">Supero - 2021</small></p>
+                    <p class="card-text">Encarregado de manter e melhorar o processo de ETL (Extração - Transformação - Carga) do sistema de Análise de Créditos.
+                      <br>Construção de consultas complexas, criando mêtricas e indicadores utilizados em Dashboards financeiros.<br>Oracle PL/SQL.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/logo-soulmv.png" class="img-fluid rounded-start" alt="soulmv">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Analista de Sistemas e Requisitos</h5>
+                    <p class="card-text"><small class="text-body-secondary">MV Sistemas - 2008 até 2020</small></p>
+                    <p class="card-text">Encarregado de dar manutenção ao sistema de Suprimentos e Compras do sistema SOULMV.
+                      <br>Encarregado de : Receber, identificar e definir os requisitos dos clientes. Escrever a Especificação funcional e técnica.
+                      <br>Oracle Forms, Reports, PL/SQL. Git, Jira, Kanban.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>  
+      
+    <br><br>
+</body>
+</html>

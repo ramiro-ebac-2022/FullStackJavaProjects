@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Aula 185 - Exercício Prático</title>
+    <!--  
+        1ª página:
+            Divida essa página usando sm-4/sm-8 e md-6/md-6.
+        2ª página:
+            Divida essa página usando lg-4/lg-8 e xxl-2/xxl-3.
+        OBSERVAÇÕES:
+            Todos os containers devem ter conteúdos, como imagens, links, colapses, etc.*
+    -->
+</head>
+<body>
+    <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+      <div id="resumo">
+        <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#resumo1">Página 1</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#resumo2">Página 2</button>
+        <div id="resumo1" class="collapse show text-white mb-5" data-bs-parent="#resumo">
+            <div class="container-fluid mt-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-6 bg-primary text-white p-3">
+                            <img src="img/cat2.jpeg" class="img-fluid rounded-start" alt="cat-skywalker">
+                        </div>
+                        <div class="col-sm-8 col-md-6 bg-info text-white p-3">
+                           <h2>Luke Skywalker</h2> 
+                           <p>É o protagonista da trilogia original da série Star Wars, além de fazer participação em quatro filmes de outras duas trilogias (A Vingança dos Sith, O Despertar da Força, Os Últimos Jedi e A Ascensão Skywalker). 
+                             <br>É interpretado pelo ator norte-americano Mark Hamill. Um personagem essencial e importante na luta da Aliança Rebelde contra o Império Galáctico, é o irmão gêmeo da líder rebelde Princesa Leia Organa de Alderaan, 
+                             foi amigo do mercenário e contrabandista Han Solo, aprendiz do grão-mestre jedi Yoda, e o filho do Jedi caído Darth Vader (Anakin Skywalker) e da Rainha de Naboo/Senadora da República Padmé Amidala. 
+                             <br>Ele é o tio e antigo mestre de Kylo Ren, antes deste ter se convertido ao Lado Negro da Força.
+                           </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="resumo2" class="collapse text-white mb-5" data-bs-parent="#resumo">
+            <div class="container-fluid mt-3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-xxl-2 bg-primary text-white p-3">
+                           <h2>Darth Vader</h2> 
+                           <p>É um personagem fictício da franquia Star Wars. O personagem é o antagonista central da trilogia original e, como Anakin Skywalker, é o principal protagonista de toda a trilogia prequela. 
+                            O criador de Star Wars, George Lucas, se referiu coletivamente aos seis primeiros filmes episódicos da franquia como "a tragédia de Anakin Skywalker". 
+                            Ele se tornou um dos vilões mais icônicos da cultura popular e foi listado entre os maiores vilões e personagens fictícios de todos os tempos.<br>
+                            Originalmente um escravo em Tatooine, Anakin Skywalker era um Jedi profetizado para trazer equilíbrio à Força. Ele é atraído para o Lado Negro da Força 
+                            pelo Chanceler Sheev Palpatine/Darth Sidious e se torna um Lorde Sith, assumindo o título de Darth Vader. <br>
+                            Após uma batalha de sabre de luz com seu ex-mentor Obi-Wan Kenobi em Mustafar, na qual ele fica gravemente ferido, Vader é transformado em um ciborgue. 
+                            Ele então serve ao Império Galáctico por mais de duas décadas como seu principal executor. <br>
+                            Vader se redime salvando seu filho, Luke Skywalker, e matando Palpatine, sacrificando sua própria vida no processo. 
+                            Ele também é o marido secreto de Padmé Amidala, o pai biológico da princesa Leia, e o avô de Kylo Ren (Ben Solo). <br>
+                            Na continuidade não canônica de Star Wars, ele também é avô de Ben Skywalker, seu epônimo Anakin Solo, Jaina Solo e Darth Caedus 
+                            (Jacen Solo), e bisavô de Allana Solo.
+                           </p>
+                        </div>
+                        <div class="col-lg-8 col-xxl-10 bg-dark text-white p-3">
+                            <img src="img/cat4a.jpg" class="img-fluid rounded-start" alt="cat-darth-vader">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>  
+</body>
+</html>

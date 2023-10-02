@@ -1,0 +1,78 @@
+
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+}
+
+/*** masthead ***/
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 40rem;
+      padding-top: 4.5rem;
+      padding-bottom: 0;
+    }
+    header.masthead p {
+      font-size: 1.15rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /*** educação ***/
+  #educacao .container-fluid, #educacao .container-sm, #educacao .container-md, #educacao .container-lg, #educacao .container-xl, #educacao .container-xxl {
+    max-width: 1920px;
+  }
+  #educacao .container-fluid .educacao-box, #educacao .container-sm .educacao-box, #educacao .container-md .educacao-box, #educacao .container-lg .educacao-box, #educacao .container-xl .educacao-box, #educacao .container-xxl .educacao-box {
+    position: relative;
+    display: block;
+  }
+  #educacao .container-fluid .educacao-box .educacao-box-caption, #educacao .container-sm .educacao-box .educacao-box-caption, #educacao .container-md .educacao-box .educacao-box-caption, #educacao .container-lg .educacao-box .educacao-box-caption, #educacao .container-xl .educacao-box .educacao-box-caption, #educacao .container-xxl .educacao-box .educacao-box-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease;
+    text-align: center;
+  }
+  #educacao .container-fluid .educacao-box .educacao-box-caption .project-category, #educacao .container-sm .educacao-box .educacao-box-caption .project-category, #educacao .container-md .educacao-box .educacao-box-caption .project-category, #educacao .container-lg .educacao-box .educacao-box-caption .project-category, #educacao .container-xl .educacao-box .educacao-box-caption .project-category, #educacao .container-xxl .educacao-box .educacao-box-caption .project-category {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #educacao .container-fluid .educacao-box .educacao-box-caption .project-name, #educacao .container-sm .educacao-box .educacao-box-caption .project-name, #educacao .container-md .educacao-box .educacao-box-caption .project-name, #educacao .container-lg .educacao-box .educacao-box-caption .project-name, #educacao .container-xl .educacao-box .educacao-box-caption .project-name, #educacao .container-xxl .educacao-box .educacao-box-caption .project-name {
+    font-size: 1.2rem;
+  }
+  #educacao .container-fluid .educacao-box:hover .educacao-box-caption, #educacao .container-sm .educacao-box:hover .educacao-box-caption, #educacao .container-md .educacao-box:hover .educacao-box-caption, #educacao .container-lg .educacao-box:hover .educacao-box-caption, #educacao .container-xl .educacao-box:hover .educacao-box-caption, #educacao .container-xxl .educacao-box:hover .educacao-box-caption {
+    opacity: 1;
+  }

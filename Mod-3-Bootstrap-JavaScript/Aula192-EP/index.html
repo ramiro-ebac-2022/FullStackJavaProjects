@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Aula 192 - Exercício Prático</title>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background-color: #aaa;
+        }
+    </style>
+    <!-- 
+        Crie uma página web contendo as seguintes especificações:
+        
+        * A página deve ter um MENU de navegação usando NAVBAR lincando para outras páginas com a mesma estilização;
+        * A página deve ter pelo menos três sessões laterais (ex. about me, links, imagens, etc);
+        * A página deve ter conteúdo principal com imagens, e pelo menos dois exemplos de tipografia;
+        * A página deve ter um rodapé;
+        * A página deve ser responsiva;
+        * A página deve ter pelo menos duas cores em Bootstrap;
+        * A página deve obrigatoriamente fazer uso de:
+            * Imagens
+            * Botões
+            * Listas
+            * Tabelas
+            * Alerts
+            * Carousel 
+            * Collapse 
+
+        Você pode usar mais de uma página e criar links internos, para criar uma harmonia entre esses itens.
+     -->
+</head>
+<!-- Cabeçalho -->
+<div class="p-2 bg-info text-white" id="cabecalho">
+    <div class="row">
+        <div class="col-sm-7">
+            <h1>The Beatles</h1>
+        </div>
+        <div class="col-sm-5">
+            <nav class="navbar navbar-expand-sm bg-info navbar-info">
+                <div class="container-fluid justify-content-end" id="integrantes" >
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="john" autocomplete="off" >
+                        <label class="btn btn-outline-primary text-white" for="john"><a href="#link-john">John</a></label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="paul" autocomplete="off">
+                        <label class="btn btn-outline-primary text-white" for="paul"><a href="#link-paul">Paul</a></label>
+                      
+                        <input type="radio" class="btn-check" name="btnradio" id="george" autocomplete="off">
+                        <label class="btn btn-outline-primary text-white" for="george"><a href="#link-george">George</a></label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="ringo" autocomplete="off">
+                        <label class="btn btn-outline-primary text-white" for="ringo"><a href="#link-ringo">Ringo</a></label>
+                      </div> 
+                </div>
+            </nav>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 ">
+    <div class="row">
+        <!-- Albums -->
+        <div class="col-sm-4">
+            <div class="col-md-10">
+                <img src="img/Beatles a banda 2.jpg" class="img-fluid rounded-start" alt="Beatles">
+            </div>
+            <h3 class="mt-4">Albums importantes</h3>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link bg-danger text-white" href="#carouselExample">Get Back</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-primary text-white" href="#carouselExample">Yellow Submarine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-info text-white" href="#carouselExample">Magical Mystery Tour</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bg-success text-white" href="#carouselExample">Let It Be</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+        <!-- Conteúdo Principal -->
+        <div class="col-sm-8">
+            <h2 id="link-banda">A Banda</h2>
+            <h5>The Beatles foi uma banda de rock, formada na cidade de Liverpool (Inglaterra), em 1956. Faziam parte deste grupo os seguintes músicos: John Lennon (vocalista, guitarrista e compositor), George Harrison (guitarrista e vocalista), Paul Mc Cartney (baixista, compositor e vocal) e Ringo Star (baterista). O nome inicial da banda era Silver Beetles, fazendo uma referência a besouros. Porém, por sugestão de John Lennon, a banda passou a se chamar The Beatles, pois a palavra inglesa "beat" significa ritmo ou batida.</h5>
+            <div>
+                <img src="img/the-beatles-6.jpg" class="img-fluid rounded-start" alt="Beatles">
+            </div>
+            <p>Fizeram sucesso mundial com suas músicas, principalmente na década de 1960. O sucesso deve-se ao estilo revolucionário que implantaram no cenário musical. Eram canções com letras marcantes e efeitos de guitarra fortes. As letras atingiram em cheio os jovens, pois eram contestadoras e revolucionárias para a época. O estilo visual também revolucionou o cenário musical. Os jovens de Liverpool usavam cabelos compridos, roupas de cores fortes, anéis e outros adereços.</p>
+            <p>O sucesso foi tão grande que no ano de 1965 foram recebidos pela rainha Elizabeth II, da Inglaterra, e receberam medalhas da Ordem do Império Britânico. Da música foram para o cinema e, em 1967, lançaram o filme “Help!”. A beatlemania espalhou-se pelo mundo inteiro, fazendo sucesso inclusive no Brasil. Produziram também outros filmes: A Hard day’s night e Magical Mistery Tour.</p>
+            <hr>
+            <h2 class="mt-5" id="link-john">John Lennon</h2>
+            <h5>John Winston Ono Lennon(Liverpool, 9 de outubro de 1940 – Nova Iorque, 8 de dezembro de 1980) foi um cantor, compositor e ativista da paz britânico que fundou os Beatles, a banda de maior sucesso comercial na história da música popular.</h5>
+            <div>
+                <img src="img/jhon1.jpeg" class="img-fluid rounded-start" alt="Beatles">
+            </div>
+            <p>Sua parceria de composição com o colega de banda Paul McCartney foi uma das mais célebres da história da música.[3] Juntamente com George Harrison e Ringo Starr, o grupo alcançou fama mundial durante a década de 1960. Em 1969, Lennon começou a Plastic Ono Band com sua segunda esposa, Yoko Ono, e continuou a seguir carreira solo após a separação dos Beatles em abril de 1970.</p>
+            <p>Nascido em Liverpool, Lennon se interessou pelo gênero skiffle quando adolescente. Em 1956, formou sua primeira banda, The Quarrymen, que culminou na criação dos Beatles em 1960. Inicialmente ele era o líder de fato do grupo, porém foi perdendo gradualmente este posto para McCartney. Lennon se caracterizou por sua natureza rebelde e sagaz em sua música, escrita, desenho, em filmes e entrevistas. No auge de sua fama na década de 1960, ele publicou dois livros: In His Own Write e A Spaniard in the Works, ambos coletâneas de escritos sem sentido e desenhos de rabisco. Começando em 1967 por "All You Need Is Love", suas canções foram adotadas como hinos pelo movimento antiguerra e pela contracultura da época.</p>
+            <hr>
+            <h2 class="mt-5" id="link-paul">Paul McCartney</h2>
+            <h5>Sir James Paul McCartney CH, MBE (Liverpool, 18 de junho de 1942) é um cantor, compositor, multi-instrumentista, empresário, produtor musical, cinematográfico e ativista dos direitos dos animais britânico. McCartney alcançou fama mundial como membro da banda de rock britânica The Beatles, com John Lennon, George Harrison e Ringo Starr.</h5>
+            <div>
+                <img src="img/paul1.jpeg" class="img-fluid rounded-start" alt="Beatles">
+            </div>
+            <p>Lennon e McCartney foram uma das mais influentes e bem sucedidas parcerias musicais de todos os tempos, "escrevendo as canções mais populares da história do rock". Após a dissolução dos Beatles em 1970, McCartney lançou-se numa carreira solo de sucessos, formou uma banda com sua primeira mulher Linda McCartney, os Wings. Ele também trabalhou com música clássica, eletrônica e trilhas sonoras.</p>
+            <p>Após a dissolução dos Beatles em 1970, McCartney lançou-se numa carreira solo de sucessos, formou uma banda com sua primeira mulher Linda McCartney, os Wings. Ele também trabalhou com música clássica, eletrônica e trilhas sonoras.</p>
+            <p>Em 1979, o Livro Guinness dos Recordes declarou-o como o compositor musical de maior sucesso da história da música pop mundial de todos os tempos. McCartney teve 29 composições de sua autoria no primeiro lugar das paradas de sucesso dos EUA, vinte das quais junto com os Beatles e o restante em sua carreira solo ou com seu grupo Wings.</p>
+            <hr>
+            <h2 class="mt-5" id="link-george">George Harrison</h2>
+            <h5>George Harrison (Liverpool, 25 de fevereiro de 1943 – Los Angeles, 29 de novembro de 2001) foi um guitarrista, cantor, compositor, produtor musical e cinematográfico britânico que obteve fama internacional como guitarrista dos Beatles. Geralmente chamado de "o Beatle quieto", Harrison aderiu ao hinduísmo e ajudou a ampliar os horizontes dos outros Beatles assim como seu público ocidental ao incorporar instrumentos indianos na música do grupo.</h5>
+            <div>
+                <img src="img/george2.jpeg" class="img-fluid rounded-start" alt="Beatles">
+            </div>
+            <p>Embora a maioria das canções da banda fossem escritas por John Lennon e Paul McCartney, a maioria dos álbuns dos Beatles, a partir de 1965, continham, pelo menos, duas composições de Harrison. Suas músicas para o grupo incluem "Taxman", "Within You Without You", "While My Guitar Gently Weeps", "Here Comes the Sun" e "Something". Esta última se tornou a segunda música mais regravada dos Beatles, perdendo apenas para "Yesterday".</p>
+            <hr>
+            <h2 class="mt-5" id="link-ringo">Ringo Star</h2>
+            <h5>Richard Starkey (Liverpool, 7 de julho de 1940), mais conhecido pelo seu nome artístico Ringo Starr, é um músico, compositor e ator britânico, que ganhou fama como baterista dos Beatles. Além de atuar como baterista, Starr foi intérprete de canções de sucesso dos Beatles, como "With a Little Help from My Friends", "Yellow Submarine", "Good Night" e seus covers de "Boys" e "Act Naturally". Ele também compôs e cantou "Don't Pass Me By" e "Octopus's Garden", e é creditado como co-compositor em outras, incluindo "What Goes On".</h5>
+            <div>
+                <img src="img/ringo2.jpeg" class="img-fluid rounded-start" alt="Beatles">
+            </div>
+            <p>Starr sofreu por doenças com risco de vida durante a infância e ficou para trás na escola como resultado de hospitalizações prolongadas. Ele trabalhou brevemente na British Rail antes de garantir um aprendizado como mecânico em uma fabricante de equipamentos de Liverpool. Logo depois, se interessou pela moda do skiffle no Reino Unido e desenvolveu uma grande admiração pelo gênero. Em 1957, co-fundou sua primeira banda, o Eddie Clayton Skiffle Group, que ganhou várias reservas locais de prestígio antes que a moda sucumbisse para o rock and roll no início de 1958. Quando os Beatles foram formados em 1960, Starr era membro de outro grupo de Liverpool, o Rory Storm and the Hurricanes. Depois de alcançar um sucesso moderado no Reino Unido e em Hamburgo, deixou os Hurricanes e se juntou aos Beatles em agosto de 1962, substituindo Pete Best.</p>
+        <!-- Albums -->
+        <div class="col-sm-8">
+            <h2 id="link-banda">Albums importantes</h2>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/1 get back.jpeg" class="img-fluid rounded-start" alt="get back">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Get Back</h5>
+                            <p class="card-text"><small class="text-body-secondary">1970</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/2 yellow submarine.jpeg" class="img-fluid rounded-start" alt="yellow submarine">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Yellow Submarine</h5>
+                            <p class="card-text"><small class="text-body-secondary">1969</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/3 magical mistery tour.jpeg" class="img-fluid rounded-start" alt="magical mistery tour">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Magical Mystery Tour</h5>
+                            <p class="card-text"><small class="text-body-secondary">1967</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/4 let it be.jpeg" class="img-fluid rounded-start" alt="let it be">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Lei It Be</h5>
+                            <p class="card-text"><small class="text-body-secondary">1970</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/5 help.jpeg" class="img-fluid rounded-start" alt="help">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Help</h5>
+                            <p class="card-text"><small class="text-body-secondary">1965</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/6 please please me.jpeg" class="img-fluid rounded-start" alt="please please me">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Please Please Me</h5>
+                            <p class="card-text"><small class="text-body-secondary">1963</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/7 rubber soul.jpeg" class="img-fluid rounded-start" alt="rubber soul">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Rubber Soul</h5>
+                            <p class="card-text"><small class="text-body-secondary">1965</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/8 a hard days night.jpeg" class="img-fluid rounded-start" alt="hard days night">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Hard Day's Night</h5>
+                            <p class="card-text"><small class="text-body-secondary">1965</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/9 revolver.jpeg" class="img-fluid rounded-start" alt="revolver">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Revolver</h5>
+                            <p class="card-text"><small class="text-body-secondary">1966</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 d-flex justify-content-center w-75 mx-auto" style="max-width: 740px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="img/albums/10 Abbey Road.jpeg" class="img-fluid rounded-start" alt="abbey road">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Abbey Road</h5>
+                            <p class="card-text"><small class="text-body-secondary">1966</small></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>    
+        </div>
+
+    </div>
+</div>
+<div class="mt-5 p-4 bg-info text-white text-center">
+    <p>Ramiro Zavala - 2023</p>
+</div>
+</body>
+</html>
